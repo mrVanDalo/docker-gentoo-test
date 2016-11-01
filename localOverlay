@@ -1,0 +1,5 @@
+[localOverlay]
+location = /ebuilds
+masters = gentoo
+auto-sync = no
+
