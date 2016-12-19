@@ -5,10 +5,12 @@ MAINTAINER Ingolf Wagner <docker@ingolf-wagner.de>
 COPY localOverlay /etc/portage/repos.conf/localOverlay
 COPY run.sh       /ebuilds/run.sh
 
-# install some tools repoman
+# install some tools
 RUN emerge --sync \
-    && emerge repoman \
-    && emerge app-text/tree \
+    && emerge \
+        app-portage/repoman \
+        app-portage/gentoolkit \
+        app-text/tree \
     && rm -rf /usr/portage
 
 WORKDIR /ebuilds
