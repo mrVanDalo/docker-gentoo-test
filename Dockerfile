@@ -11,6 +11,7 @@ RUN emerge --sync \
         app-portage/repoman \
         app-portage/gentoolkit \
         app-text/tree \
+        dev-vcs/git \
     && rm -rf /usr/portage
 
 WORKDIR /ebuilds
